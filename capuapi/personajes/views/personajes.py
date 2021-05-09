@@ -12,7 +12,7 @@ from capuapi.personajes.serializers import PersonajeSerializer
 def list_personajes(request):
     """Listar Personajes.
     """
-    personajes = Personaje.objects.filter()
+    personajes = Personaje.objects.all()
     serializer = PersonajeSerializer(personajes, many=True)
 
-    return Response(serializer)
+    return Response(serializer.data)
