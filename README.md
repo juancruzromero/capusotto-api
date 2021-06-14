@@ -11,3 +11,8 @@ Editar settings de producción:
 En el archivo **manage.py** seteo el DJANGO_SETTINGS_MODULE para que tome los archivos de configuración.
 
 [DJANGO_SETTINGS_MODULE](https://docs.djangoproject.com/en/3.2/topics/settings/#envvar-DJANGO_SETTINGS_MODULE)
+
+python manage.py makemigrations personajes
+
+Clave donde se crea la bd
+'NAME': BASE_DIR.parent / 'db.sqlite3',
