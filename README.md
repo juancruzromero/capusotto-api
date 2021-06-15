@@ -2,6 +2,9 @@
 
 ## Ejecución:
 **Deploy ubuntu:**
+
+*Para usar sqlite3 en local:* DJANGO_SETTINGS_MODULE=config.settings.base
+
 1) python -m venv env
 2) source env/bin/activate
 3) pip install -r requirements.txt
