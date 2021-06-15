@@ -17,9 +17,17 @@ python manage.py makemigrations personajes
 Clave donde se crea la bd
 'NAME': BASE_DIR.parent / 'db.sqlite3',
 
-Deploy:
+Deploy ubuntu:
+1) python -m venv env
+2) source env/bin/activate
+3) pip install -r requirements.txt
+4) python manage.py makemigrations personajes
+5) python manage.py migrate
+6) python manage.py runserver
+
+Deploy con docker:
 1) docker-compose build
 2) docker-compose run web python manage.py makemigrations personajes
 3) docker-compose run web python manage.py migrate
 4) docker-compose up
-4) docker-compose down
+5) docker-compose down
