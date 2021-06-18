@@ -4,7 +4,7 @@ from django.db import models
 
 class CapuAPIModel(models.Model):
     """
-    TODO: Documentar...
+    Fields de Django: https://docs.djangoproject.com/en/3.2/ref/forms/fields/
     """
     created = models.DateTimeField(
         'created at',
