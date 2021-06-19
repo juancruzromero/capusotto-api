@@ -43,6 +43,7 @@ TP_APPS = [
 
 LOCAL_APPS = [
     'capuapi.personajes.apps.PersonajesConfig',
+    'capuapi.users.apps.UsersAppConfig',    
 ]
 # Application definition
 

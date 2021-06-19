@@ -18,5 +18,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(('capuapi.personajes.urls','personajes'), namespace='personaje')),
+    path('', include(('capuapi.personajes.urls','personajes'), namespace='personajes')),
+    path('', include(('capuapi.users.urls','users'), namespace='users')),    
 ]
