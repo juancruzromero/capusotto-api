@@ -1,22 +1,14 @@
 """Users serializers."""
 
 # Django
-from django.conf import settings
-from django.contrib.auth import password_validation, authenticate
-from django.core.mail import EmailMultiAlternatives
-from django.core.validators import RegexValidator
-from django.template.loader import render_to_string
-from django.utils import timezone
+from django.contrib.auth import authenticate
 
 # Django REST Framework
 from rest_framework import serializers
-# from rest_framework.authtoken.models import Token
-# from rest_framework.validators import UniqueValidator
+from rest_framework.authtoken.models import Token
 
 # Models
 from capuapi.users.models import User
-
-# Utilities
 
 class UserModelSerializer(serializers.ModelSerializer):
     """User model serializer."""
@@ -32,3 +24,24 @@ class UserModelSerializer(serializers.ModelSerializer):
             'email',
             'phone_number'
         )
+
+class UserLoginSerializer(serializers.Serializer):
+    """User login serializer.
+    Manejo de datos para iniciar sesión.
+    """
+
+    email = serializers.EmailField()
+    password = serializers.CharField(min_length=8, max_length=64)
+
+    def validate(self, data):
+        """Check credentials."""
+        user = authenticate(username=data['email'], password=data['password'])
+        if not user:
+            raise serializers.ValidationError('Invalid credentials')
+        self.context['user'] = user
+        return data
+
+    def create(self, data):
+        """Generate or retrieve new token."""
+        token, created = Token.objects.get_or_create(user=self.context['user'])
+        return self.context['user'], token.key
