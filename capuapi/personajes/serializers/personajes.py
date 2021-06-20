@@ -5,6 +5,7 @@ from rest_framework import serializers
 from capuapi.personajes.models import Personaje
 
 class PersonajeSerializer(serializers.Serializer):
+    id = serializers.IntegerField()
     name = serializers.CharField()
     about = serializers.CharField()
 
