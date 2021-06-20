@@ -39,6 +39,7 @@ DJANGO_APPS = [
 
 TP_APPS = [
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 LOCAL_APPS = [
