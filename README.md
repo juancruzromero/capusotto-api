@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img align="center"; src="http://petercapusotto.tv/wp-content/uploads/2016/05/logo-3.png"; width="40"; height="30">
+  <img align="center"; src="http://petercapusotto.tv/wp-content/uploads/2016/05/logo-3.png"; width="30%">
     CapuAPI
 </h1>
 
