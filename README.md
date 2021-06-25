@@ -3,6 +3,8 @@
     CapuAPI
 </h1>
 
+⚠️**IMPORTANTE:** Aún está en desarrollo, pero se puede hacer deploy configurando la variable DJANGO_SETTINGS_MODULE. Aún trabajando en el versionado y la organización del repositorio. 
+
 Como fan del capocómico Peter Capusotto y el gran guionisa argentino, Pedro Saborido, hice esta API REST con información de todos los personajes de este programa de televisión y otras cositas.
 
 La idea de este proyecto es introducir a los estudiantes a poder pensar como crear servicios API REST e ir probando cositas para aprender.
