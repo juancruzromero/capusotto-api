@@ -1,7 +1,11 @@
+"""
+Personajes Serializers.
 
+DRF Docs: https://www.django-rest-framework.org/api-guide/serializers/#serializers
+"""
 # DRF 
 from rest_framework import serializers
-
+# Models
 from capuapi.personajes.models import Personaje
 
 class PersonajeSerializer(serializers.Serializer):
