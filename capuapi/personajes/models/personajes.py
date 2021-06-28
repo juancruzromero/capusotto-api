@@ -1,4 +1,10 @@
-""" Personajes models"""
+"""
+Personajes models.
+
+Django Docs:
+    - Models: https://docs.djangoproject.com/en/3.2/topics/db/models/#module-django.db.models
+    - Fields: https://docs.djangoproject.com/en/3.2/ref/forms/fields/#module-django.forms.fields
+"""
 # Django
 from django.db import models
 # Utilities
