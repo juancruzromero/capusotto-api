@@ -4,7 +4,7 @@
 </h1>
 
 _____________________________________________________________________________________
-⚠️***IMPORTANTE:*** Esta API aún está en desarrollo, pero se puede hacer deploy configurando la variable DJANGO_SETTINGS_MODULE. Aún trabajando en el versionado y la organización del repositorio. Se estima hacer el deploy y poder consumir la API para el mes de noviembre del 2021.
+⚠️***IMPORTANTE:*** Esta API la estoy refactorizando para hacerla con FastAPI. Estimo tenerla deployada para finales de julio 2025
 _____________________________________________________________________________________
 Como fan del capocómico Peter Capusotto y el gran guionisa argentino, Pedro Saborido, hice esta API REST con información de todos los personajes de este programa de televisión y otras cositas.
 
