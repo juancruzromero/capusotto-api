@@ -40,6 +40,13 @@ docker run -d -p 8000:8000 capusotto-api
 - Eliminar personajes
 
 ## Próximos features 🔧
-- Integración con base de datos PostgreSQL.
-- Mejorar ADD, UPDATE y DELETE de personajes.
-- Mejorar 404 en frontend.
+- [ ] Integración con base de datos PostgreSQL.
+- [ ] Mejorar ADD, UPDATE y DELETE de personajes.
+- [ ] Mejorar 404 en frontend.
+- [ ] Mejorar CI.
+- [ ] Agregar .dockerignore y mejorar imagen.
+- [ ] Agregar makefile para simplificar comandos comunes.
+- [ ] Mejorar tests.
+- [ ] Actualizar Depndabot.
+- [ ] Agregar CHANGELOG.md
+- [ ] Agregar SECURITY.md
