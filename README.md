@@ -40,6 +40,8 @@ docker run -d -p 8000:8000 capusotto-api
 - Eliminar personajes
 
 ## Próximos features 🔧
+- [ ] Agregar más personajes.
+- [ ] Agregar mejores episodios de cada personaje.
 - [ ] Integración con base de datos PostgreSQL.
 - [ ] Mejorar ADD, UPDATE y DELETE de personajes.
 - [ ] Mejorar 404 en frontend.
