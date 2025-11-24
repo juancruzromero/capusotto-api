@@ -1,3 +1,9 @@
+<h1 align="center">
+    <img src="https://d3b5jqy5xuub7g.cloudfront.net/wp-content/uploads/2019/05/PeterCapusottoYSusVideos.jpg" alt="Capusotto" align="center" width="80px">
+    <br>
+    Capusotto API - Cómo contribuir
+</h1>
+
 🧱 Requisitos previos
 
 Antes de empezar, asegurate de tener instalado:
