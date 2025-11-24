@@ -9,8 +9,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    env:
-      PYTHONPATH: ${{ github.workspace }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -25,5 +23,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Add project to PYTHONPATH
+        run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
+          
       - name: Run tests
         run: pytest -q
