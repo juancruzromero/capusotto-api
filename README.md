@@ -10,9 +10,8 @@ API de los personajes de Peter Capusotto📺. Escrita en Python, aplicando buena
 - Desarrollado con Python 3.13.3.
 
 ## Diagrama de diseño
-<p align="center">
-    <img src="./docs/design_diagram.png" alt="Diagrama de diseño" width="480">
-</p>
+
+![imagen](./docs/design_diagram.png)
 
 ## Cómo correr el proyecto
 
