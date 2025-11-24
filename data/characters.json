@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nombre": "Luis Almirante Brown",
+        "descripcion": "Un rockero de izquierda que vive en una eterna revolución mental.",
+        "frase": "El rock es peronista",
+        "video": "https://www.youtube.com/watch?v=BWdvx5RhwoI"
+    },
+    {
+        "id": 2,
+        "nombre": "Pomelo",
+        "descripcion": "Estrella de rock que vive al límite y dice frases incomprensibles.",
+        "frase": "¡Rock and roll nenenene!",
+        "video": "https://www.youtube.com/watch?v=8fNVNt-Y1bU"
+    },
+    {
+        "id": 3,
+        "nombre": "Micky Vainilla",
+        "descripcion": "Cantante pop con letras políticamente incorrectas y actitudes elitistas.",
+        "frase": "Hay gente que no debería nacer.",
+        "video": "https://www.youtube.com/watch?v=5nmAouMTAow"
+    },
+    {
+        "id": 4,
+        "nombre": "Violencia Rivas",
+        "descripcion": "Mujer desencantada con la sociedad moderna, proclama el fin del mundo.",
+        "frase": "¡La vida es una mierda!",
+        "video": "https://www.youtube.com/watch?v=UZBlWDZdfRE"
+    },
+    {
+        "id": 5,
+        "nombre": "Bombita Rodríguez",
+        "descripcion": "El Palito Ortega Montonero, mezcla de cantante pop y militante setentista.",
+        "frase": "¡La vida es una moneda!",
+        "video": "https://www.youtube.com/watch?v=f6VzxA7ThKg"
+    }
+]

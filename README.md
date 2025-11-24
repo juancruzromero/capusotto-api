@@ -1,40 +1,46 @@
 <h1 align="center">
-  <img align="center"; src="http://petercapusotto.tv/wp-content/uploads/2016/05/logo-3.png" width="100px"; height="40px">
-    CapuAPI
+    <img src="https://d3b5jqy5xuub7g.cloudfront.net/wp-content/uploads/2019/05/PeterCapusottoYSusVideos.jpg" alt="Capusotto" align="center" width="80px">
+    <br>
+    Capusotto API
 </h1>
 
-_____________________________________________________________________________________
-⚠️***IMPORTANTE:*** Esta API la estoy refactorizando para hacerla con FastAPI. Estimo tenerla deployada para finales de julio 2025
-_____________________________________________________________________________________
-Como fan del capocómico Peter Capusotto y el gran guionisa argentino, Pedro Saborido, hice esta API REST con información de todos los personajes de este programa de televisión y otras cositas.
+## Descripción del proyecto
+API de los personajes de Peter Capusotto📺. Escrita en Python, aplicando buenas prácticas y coso.
 
-La idea de este proyecto es introducir a los estudiantes a poder pensar como crear servicios API REST e ir probando cositas para aprender.
+- Desarrollado con Python 3.13.3.
 
-Está hecha en Python y utiliza el Framework Django.
-## Ejecución:
-**Deploy ubuntu:**
+## Diagrama de diseño
+<p align="center">
+    <img src="./docs/design_diagram.png" alt="Diagrama de diseño" width="480">
+</p>
 
-*Para usar sqlite3 en local:* DJANGO_SETTINGS_MODULE=config.settings.base
+## Cómo correr el proyecto
 
-1) python -m venv env
-2) source env/bin/activate
-3) pip install -r requirements.txt
-4) python manage.py makemigrations personajes
-5) python manage.py migrate
-6) python manage.py runserver
+```bash
+git clone https://github.com/tu_usuario/capusotto_api.git
+cd capusotto_api
+pip install -r requirements.txt
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+### Con Docker:
 
-**Deploy con docker:**
-1) docker-compose build
-2) docker-compose run web python manage.py makemigrations personajes
-3) docker-compose run web python manage.py migrate
-4) docker-compose up
-5) docker-compose down
+```bash
+git clone https://github.com/tu_usuario/capusotto_api.git
+cd capusotto_api
+docker build -t capusotto_api .
+docker run -d -p 8000:8000 capusotto_api
+```
 
-## Anotaciones
-Editar settings de producción:
-En el archivo **manage.py** seteo el DJANGO_SETTINGS_MODULE para que tome los archivos de configuración.
-[DJANGO_SETTINGS_MODULE](https://docs.djangoproject.com/en/3.2/topics/settings/#envvar-DJANGO_SETTINGS_MODULE)
+## Features principales
+- Listar personajes
+- Obtener detalles de un personaje
 
-Clave donde se crea la bd:
-'NAME': BASE_DIR.**parent** / 'db.sqlite3',
+**Mejoras cuando se defina base de datos:**
+- Agregar nuevos personajes 
+- Actualizar personajes existentes
+- Eliminar personajes
 
+## Próximos features:
+- Integración con base de datos PostgreSQL.
+- Mejorar ADD, UPDATE y DELETE de personajes.
+- Mejorar 404 en frontend.
