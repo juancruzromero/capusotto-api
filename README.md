@@ -13,7 +13,7 @@ API de los personajes de Peter Capusotto📺. Escrita en Python, aplicando buena
 
 ![imagen](./docs/diagram.svg)
 
-## Cómo correr el proyecto
+## Cómo correr el proyecto 🚀
 
 ```bash
 git clone https://github.com/tu_usuario/capusotto_api.git
@@ -21,7 +21,7 @@ cd capusotto_api
 pip install -r requirements.txt
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
-### Con Docker:
+### Con Docker 🐳:
 
 ```bash
 git clone https://github.com/tu_usuario/capusotto_api.git
@@ -30,7 +30,7 @@ docker build -t capusotto_api .
 docker run -d -p 8000:8000 capusotto_api
 ```
 
-## Features principales
+## Features principales ⭐
 - Listar personajes
 - Obtener detalles de un personaje
 
@@ -39,7 +39,7 @@ docker run -d -p 8000:8000 capusotto_api
 - Actualizar personajes existentes
 - Eliminar personajes
 
-## Próximos features:
+## Próximos features 🔧
 - Integración con base de datos PostgreSQL.
 - Mejorar ADD, UPDATE y DELETE de personajes.
 - Mejorar 404 en frontend.
