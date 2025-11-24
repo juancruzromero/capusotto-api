@@ -16,18 +16,18 @@ API de los personajes de Peter Capusotto📺. Escrita en Python, aplicando buena
 ## Cómo correr el proyecto 🚀
 
 ```bash
-git clone https://github.com/tu_usuario/capusotto_api.git
-cd capusotto_api
+git clone https://github.com/juancruzromero/capusotto-api
+cd capusotto-api
 pip install -r requirements.txt
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 ### Con Docker 🐳:
 
 ```bash
-git clone https://github.com/tu_usuario/capusotto_api.git
-cd capusotto_api
-docker build -t capusotto_api .
-docker run -d -p 8000:8000 capusotto_api
+git clone https://github.com/juancruzromero/capusotto-api
+cd capusotto-api
+docker build -t capusotto-api .
+docker run -d -p 8000:8000 capusotto-api
 ```
 
 ## Features principales ⭐
