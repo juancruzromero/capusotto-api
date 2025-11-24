@@ -1,8 +1,17 @@
-""" Definoción de fixtures para tests con pytest. """
+""" Definición de fixtures para tests con pytest. """
 
+import sys
+import pathlib
 import json
 import pytest
 from fastapi.testclient import TestClient
+
+# Asegura que el root del repositorio esté en sys.path para que
+# los módulos de nivel superior (p. ej. 'service') puedan
+# importarse al ejecutar `pytest` desde la terminal.
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 import service
 import main
@@ -41,7 +50,6 @@ def temp_data(tmp_path):
     service.DATA_FILE = data_file
 
     yield data_file
-
 
 @pytest.fixture
 def client(temp_data):
