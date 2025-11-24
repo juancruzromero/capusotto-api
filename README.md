@@ -7,7 +7,7 @@
 ## Descripción del proyecto
 API de los personajes de Peter Capusotto📺. Escrita en Python, aplicando buenas prácticas y coso.
 
-- Desarrollado con Python 3.13.3.
+- Desarrollado con Python 3.13.3
 
 ## Diagrama de diseño
 
