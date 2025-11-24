@@ -11,7 +11,7 @@ API de los personajes de Peter Capusotto📺. Escrita en Python, aplicando buena
 
 ## Diagrama de diseño
 
-![imagen](./docs/design_diagram.png)
+![imagen](./docs/diagram.svg)
 
 ## Cómo correr el proyecto
 
